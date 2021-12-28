@@ -21,7 +21,7 @@ on:
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt
-  REPO_BRANCH: master
+  REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: x86-64_mysetting-ipv6-2in1/feeds.conf.default
   CONFIG_FILE: x86-64_mysetting-ipv6-2in1/.config
   DIY_P1_SH: x86-64_mysetting-ipv6-2in1/diy_part1.sh
@@ -60,7 +60,6 @@ jobs:
       run: |
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
-        git checkout v21.02.1
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         cd openwrt
         echo "DATE=$(date "+%Y-%m-%d %H:%M:%S")" >> $GITHUB_ENV

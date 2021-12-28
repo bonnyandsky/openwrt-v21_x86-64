@@ -35,6 +35,7 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/autocore package/
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/automount package/automount
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/autosamba package/autosamba
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ipv6-helper package/ipv6-helper
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-zerotie package/luci-app-zerotier
 
 # 流量监控
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-wrtbwmon package/luci-app-wrtbwmon

@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://git.openwrt.org/openwrt/openwrt.git
   REPO_BRANCH: master
   FEEDS_CONF: x86-64_mysetting-ipv6-2in1/feeds.conf.default
   CONFIG_FILE: x86-64_mysetting-ipv6-2in1/.config
@@ -60,6 +60,7 @@ jobs:
       run: |
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
+        git checkout v21.02.1
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         cd openwrt
         echo "DATE=$(date "+%Y-%m-%d %H:%M:%S")" >> $GITHUB_ENV

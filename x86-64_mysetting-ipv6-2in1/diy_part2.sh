@@ -20,7 +20,7 @@ rm -rf package/lean/luci-theme-argon
 
 # 添加额外软件包，不在根目录要用svn co，然后tree/main替换成trunk
 git clone https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
-#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-advanced package/luci-app-advanced
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-advanced package/luci-app-advanced
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata package/luci-app-netdata
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netspeedtest package/luci-app-netspeedtest
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind package/luci-app-arpbind

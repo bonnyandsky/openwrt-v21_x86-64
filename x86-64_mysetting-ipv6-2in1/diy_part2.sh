@@ -24,7 +24,7 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ipsec-vp
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ramfree package/luci-app-ramfree
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-softethervpn package/luci-app-softethervpn
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/autocore package/autocore
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/automount package/automount
+# svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/automount package/automount
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ipv6-helper package/ipv6-helper
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-zerotier package/luci-app-zerotier
 

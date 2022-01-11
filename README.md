@@ -14,11 +14,11 @@ sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git
 
 sudo apt install ca-certificates
 
-git clone https://github.com/coolsnowwolf/lede
+git clone https://github.com/openwrt/openwrt -b openwrt-21.02 openwrt
 
-cd lede
+cd opewnrt
 
-lede\feeds.conf.default添加
+openwrt\feeds.conf.default添加
 ```bash
 src-git helloworld https://github.com/fw876/helloworld
 src-git passwall https://github.com/xiaorouji/openwrt-passwall
@@ -40,7 +40,7 @@ make -j1 V=s （-j1 后面是线程数。第一次编译推荐用单线程）即
 
 二次编译：
 
-cd lede
+cd openwrt
 
 git pull
 

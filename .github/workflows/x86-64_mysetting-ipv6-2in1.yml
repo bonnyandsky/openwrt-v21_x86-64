@@ -32,7 +32,7 @@ env:
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
-  FILE_NAME: autocore
+  FILE_NAME: ipv6-helper
 
 jobs:
   build:

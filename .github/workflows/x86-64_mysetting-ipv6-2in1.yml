@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 # 初始ip:192.168.0.1
 
-name: autocore
+name: x86-64_mysetting-ipv6-2in1
 
 on:
   repository_dispatch:
@@ -32,7 +32,7 @@ env:
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
-  FILE_NAME: x86-64_mysetting-ipv6-2in1
+  FILE_NAME: autocore
 
 jobs:
   build:

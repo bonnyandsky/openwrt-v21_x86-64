@@ -14,7 +14,7 @@
 sed -i 's/192.168.1.1/192.168.0.5/g' package/base-files/files/bin/config_generate
 
 # 添加额外软件包，不在根目录要用svn co，然后tree/main替换成trunk
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/autocore package/autocore
+#svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/autocore package/autocore
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ipv6-helper package/ipv6-helper
 #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-advanced package/luci-app-advanced
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind package/luci-app-arpbind
@@ -27,7 +27,7 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/autocore package/
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-softethervpn package/luci-app-softethervpn
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-zerotier package/luci-app-zerotier
 
-# svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/automount package/automount
+#svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/automount package/automount
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/autosamba package/autosamba
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-vlmcsd package/luci-app-vlmcsd
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-turboacc package/luci-app-turboacc

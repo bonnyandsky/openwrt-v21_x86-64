@@ -32,7 +32,7 @@ env:
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
-  FILE_NAME: zerotier
+  FILE_NAME: other autocore
 
 jobs:
   build:
@@ -190,13 +190,13 @@ jobs:
       uses: GitRML/delete-workflow-runs@main
       with:
         retain_days: 30
-        keep_minimum_runs: 30
+        keep_minimum_runs: 1
 
     - name: Remove old Releases
       uses: dev-drprasad/delete-older-releases@v0.2.0
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:
-        keep_latest: 30
+        keep_latest: 1
         delete_tags: true
         delete_tag_pattern: ${{ env.FILE_NAME }}
       env:

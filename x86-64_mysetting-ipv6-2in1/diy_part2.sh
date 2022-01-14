@@ -37,12 +37,12 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-zerotier
 #git clone https://github.com/nixonli/ddns-scripts_dnspod.git package/dnspod
 
 # 流量监控
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-wrtbwmon package/luci-app-wrtbwmon
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/wrtbwmon package/wrtbwmon
+#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-wrtbwmon package/luci-app-wrtbwmon
+#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/wrtbwmon package/wrtbwmon
 
 # Themes
-#git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
-#git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
 # 修改插件名字
 #sed -i 's/"流量"/"实时流量监测"/g' `grep "流量" -rl ./`

@@ -19,7 +19,7 @@ jobs:
         # skip-tags: true
         skip-recent: 5
         
-      - name: Remove old Releases
+    - name: Remove old Releases
       uses: dev-drprasad/delete-older-releases@v0.2.0
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:

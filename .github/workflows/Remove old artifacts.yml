@@ -14,7 +14,17 @@ jobs:
     - name: Remove old artifacts
       uses: c-hive/gha-remove-artifacts@v1
       with:
-        age: '2 days'
+        age: '1 days'
         # Optional inputs
         # skip-tags: true
-        # skip-recent: 5
+        skip-recent: 5
+        
+      - name: Remove old Releases
+      uses: dev-drprasad/delete-older-releases@v0.2.0
+      if: env.UPLOAD_RELEASE == 'true' && !cancelled()
+      with:
+        keep_latest: 1
+        delete_tags: true
+#        delete_tag_pattern: ${{ env.FILE_NAME }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

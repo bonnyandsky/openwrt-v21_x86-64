@@ -32,7 +32,7 @@ env:
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
-  FILE_NAME: argon
+  FILE_NAME: allin but autocore
 
 jobs:
   build:

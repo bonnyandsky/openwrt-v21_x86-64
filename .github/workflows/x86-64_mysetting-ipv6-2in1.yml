@@ -198,6 +198,6 @@ jobs:
       with:
         keep_latest: 1
         delete_tags: true
-        delete_tag_pattern: ${{ env.FILE_NAME }}
+#        delete_tag_pattern: ${{ env.FILE_NAME }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
